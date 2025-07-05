@@ -11,9 +11,9 @@ const repoName = 'vue-api-integration-project'
 export default defineConfig({
   plugins: [
     vue(),
-    base: `/${repoName}/`,
     vueDevTools(),
   ],
+  base: `/${repoName}/`,
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
